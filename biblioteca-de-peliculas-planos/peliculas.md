@@ -1,19 +1,19 @@
-~Coco~,
+~Coco~
 
-~Moana~,
+~Moana~
 
-~Totoro~,
+~Totoro~
 
-Your Name, 
+Your Name 
 
-~Zootopia~,
+~Zootopia~
 
-Tangled, 
+Tangled
 
-~Incredibles2~, 
+~Incredibles2~ 
 
-Anchor Man, 
+Anchor Man
 
-Zoolander1&2, 
+Zoolander1&2 
 
 Fight club
