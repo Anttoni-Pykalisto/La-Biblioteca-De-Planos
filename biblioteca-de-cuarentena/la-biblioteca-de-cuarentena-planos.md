@@ -1,4 +1,5 @@
-salsa on a Thursday
-movie night on a Friday 
-yoga day on a Tuesday / Wednesday 
+Salsa practice (can both of us complete the challenge😉)
 
+Finish Hook
+
+Watch the Iron Giant (Anttoni gotta keep upp)
