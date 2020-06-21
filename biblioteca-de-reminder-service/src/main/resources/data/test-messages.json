@@ -1,0 +1,10 @@
+[
+    {
+        "specialDate": "2019-11-02T00:00:00",
+        "ocassion": "The Beginning Anniversario",
+        "noticeIntervalDays": [1, 7], 
+        "recipientNumbers": ["07948537463", "07784502989"], 
+        "noticeMessage": "Your anniversary is coming up!", 
+        "specialDateMessage": "Your anniversary is here, enjoy B ;)"
+    }
+]
