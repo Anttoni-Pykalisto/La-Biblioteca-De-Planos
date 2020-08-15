@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.List;
 
 import com.la.biblioteca.labibliotecadelplanoschooser.adapter.PlanosAdapter;
-import com.la.biblioteca.labibliotecadelplanoschooser.adapter.PlanosReader;
 import com.la.biblioteca.labibliotecadelplanoschooser.model.ElPlan;
 
 import org.springframework.stereotype.Service;
@@ -15,8 +14,12 @@ public class ElPlanosChooser {
 
     private PlanosAdapter planosAdapter = new PlanosAdapter();
 
-    public List<String> getAllCategories() {
-        return categoryReader();
+    public List<ElPlan> getAllPlanos() {
+        return this.planosAdapter.getAllLosPlanos();
+    }
+
+    public List<String> planosCategories() {
+        return this.planosAdapter.getCategories();
     }
 
     public ElPlan chooseRandomPlanosFromCategory(String planosCategory) {
@@ -36,9 +39,4 @@ public class ElPlanosChooser {
     public List<String> categoryReader() {
         return Arrays.asList("Planos Uno", "Planos Dos");
     }
-
-    public ElPlan[] getPlanosData() {
-        return this.planosAdapter.getAllLosPlanos();
-    }
-
 }

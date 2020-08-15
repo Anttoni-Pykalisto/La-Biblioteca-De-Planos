@@ -20,19 +20,18 @@ public class ElPlanosChooserApi {
     @Autowired
     private ElPlanosChooser elPlanosChooser;
 
+    @GetMapping("/allPlanos")
+    public ResponseEntity<List<ElPlan>> getAllPlanos() {
+        return new ResponseEntity<List<ElPlan>>(elPlanosChooser.getAllPlanos(), HttpStatus.OK);
+    }
+
     @GetMapping("/categories")
-    public List<String> getAllPlanosCategories() {
-        return elPlanosChooser.getAllCategories();
+    public ResponseEntity<List<String>> getPlanosCategories() {
+        return new ResponseEntity<List<String>>(elPlanosChooser.planosCategories(), HttpStatus.OK);
     }
  
     @GetMapping("/categories/{category}")
     public ElPlan chooseRandomPlanos(@PathVariable("category") String category) {
         return elPlanosChooser.chooseRandomPlanosFromCategory(category);
     }
-
-    @GetMapping("/planosPrint")
-    public ResponseEntity<ElPlan[]> printPlanos() {
-        return new ResponseEntity<ElPlan[]>(elPlanosChooser.getPlanosData(), HttpStatus.OK);
-    }
-    
 }
