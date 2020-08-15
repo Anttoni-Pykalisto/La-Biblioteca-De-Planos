@@ -5,11 +5,11 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Random;
 import java.util.stream.Collectors;
 
 import com.la.biblioteca.labibliotecadelplanoschooser.model.CategoryCount;
 import com.la.biblioteca.labibliotecadelplanoschooser.model.ElPlan;
-
 
 public class PlanosAdapter {
 
@@ -37,5 +37,11 @@ public class PlanosAdapter {
         return planosList.stream().filter(
             planos -> planos.getCategory().equalsIgnoreCase(planosCategory)
             ).collect(Collectors.toList());
+    }
+
+    public ElPlan chooseElUltimatePlanos(String planosCategory) {
+        List<ElPlan> planosFromCategory = this.getPlanosFromCategory(planosCategory);
+        Random rand = new Random();
+        return planosFromCategory.get(rand.nextInt(planosFromCategory.size()));
     }
 }

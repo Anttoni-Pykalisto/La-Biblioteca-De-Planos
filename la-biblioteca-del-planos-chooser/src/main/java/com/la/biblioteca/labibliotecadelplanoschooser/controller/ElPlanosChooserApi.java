@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 import com.la.biblioteca.labibliotecadelplanoschooser.model.CategoryCount;
 import com.la.biblioteca.labibliotecadelplanoschooser.model.ElPlan;
+import com.la.biblioteca.labibliotecadelplanoschooser.model.ElUltimoPlan;
 import com.la.biblioteca.labibliotecadelplanoschooser.service.ElPlanosChooser;
 
 @RestController
@@ -30,8 +31,13 @@ public class ElPlanosChooserApi {
         return new ResponseEntity<List<CategoryCount>>(elPlanosChooser.planosCategories(), HttpStatus.OK);
     }
  
-    @GetMapping("/categories/{category}")
-    public ResponseEntity<List<ElPlan>> getPlanosFromCategory(@PathVariable("category") String category) {
-        return new ResponseEntity<List<ElPlan>>(elPlanosChooser.getPlanosFromCategory(category), HttpStatus.OK);
+    @GetMapping("/categories/{planosCategory}")
+    public ResponseEntity<List<ElPlan>> getPlanosFromCategory(@PathVariable("planosCategory") String planosCategory) {
+        return new ResponseEntity<List<ElPlan>>(elPlanosChooser.getPlanosFromCategory(planosCategory), HttpStatus.OK);
+    }
+
+    @GetMapping("/categories/{planosCategory}/elUltimoPlan")
+    public ResponseEntity<ElPlan> chooseRandomPlanosFromCategory(@PathVariable("planosCategory") String planosCategory) {
+        return new ResponseEntity<ElPlan>(elPlanosChooser.chooseRandomPlanosFromCategory(planosCategory), HttpStatus.OK);
     }
 }
