@@ -1,6 +1,8 @@
 package com.la.biblioteca.labibliotecadelplanoschooser.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-import com.la.biblioteca.labibliotecadelplanoschooser.model.ElPlanos;
+import com.la.biblioteca.labibliotecadelplanoschooser.model.ElPlan;
 import com.la.biblioteca.labibliotecadelplanoschooser.service.ElPlanosChooser;
 
 @RestController
@@ -24,8 +26,13 @@ public class ElPlanosChooserApi {
     }
  
     @GetMapping("/categories/{category}")
-    public ElPlanos chooseRandomPlanos(@PathVariable("category") String category) {
+    public ElPlan chooseRandomPlanos(@PathVariable("category") String category) {
         return elPlanosChooser.chooseRandomPlanosFromCategory(category);
+    }
+
+    @GetMapping("/planosPrint")
+    public ResponseEntity<ElPlan[]> printPlanos() {
+        return new ResponseEntity<ElPlan[]>(elPlanosChooser.getPlanosData(), HttpStatus.OK);
     }
     
 }

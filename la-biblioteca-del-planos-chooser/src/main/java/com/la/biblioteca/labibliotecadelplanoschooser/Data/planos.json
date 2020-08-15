@@ -1,1 +1,38 @@
-[]
+[
+    {
+        "category":"",
+        "elPlan": "",
+        "description": "",
+        "status": "TODO"
+    },
+    {
+        "category":"category Value",
+        "elPlan": "planos value",
+        "description": "description value",
+        "status": "TODO"
+    },
+    {
+        "category":"London",
+        "elPlan": "The Shard",
+        "description": "We should go the shard one day",
+        "status": "TODO"
+    },
+    {
+        "category":"Food",
+        "elPlan": "Pho",
+        "description": "",
+        "status": "TODO"
+    },
+    {
+        "category":"London",
+        "elPlan": "Roller Skating",
+        "description": "",
+        "status": "TODO"
+    },
+    {
+        "category":"Movie",
+        "elPlan": "Peter Pan",
+        "description": "",
+        "status": "TODO"
+    }
+]
