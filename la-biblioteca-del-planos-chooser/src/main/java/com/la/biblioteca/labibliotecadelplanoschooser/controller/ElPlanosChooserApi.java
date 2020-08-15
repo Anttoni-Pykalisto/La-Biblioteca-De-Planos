@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-
+import com.la.biblioteca.labibliotecadelplanoschooser.model.CategoryCount;
 import com.la.biblioteca.labibliotecadelplanoschooser.model.ElPlan;
 import com.la.biblioteca.labibliotecadelplanoschooser.service.ElPlanosChooser;
 
@@ -26,8 +26,8 @@ public class ElPlanosChooserApi {
     }
 
     @GetMapping("/categories")
-    public ResponseEntity<List<String>> getPlanosCategories() {
-        return new ResponseEntity<List<String>>(elPlanosChooser.planosCategories(), HttpStatus.OK);
+    public ResponseEntity<List<CategoryCount>> getPlanosCategories() {
+        return new ResponseEntity<List<CategoryCount>>(elPlanosChooser.planosCategories(), HttpStatus.OK);
     }
  
     @GetMapping("/categories/{category}")

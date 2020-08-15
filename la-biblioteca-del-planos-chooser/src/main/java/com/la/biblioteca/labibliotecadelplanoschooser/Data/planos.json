@@ -1,14 +1,14 @@
 [
     {
-        "category":"",
-        "elPlan": "",
-        "description": "",
+        "category":"London",
+        "elPlan": "Victoria Park",
+        "description": "Take another lil walk around Victoria Park",
         "status": "TODO"
     },
     {
-        "category":"category Value",
-        "elPlan": "planos value",
-        "description": "description value",
+        "category":"Food",
+        "elPlan": "Anttoni's bday",
+        "description": "Patacones & chimmichurri, BBQ, Tacos",
         "status": "TODO"
     },
     {
