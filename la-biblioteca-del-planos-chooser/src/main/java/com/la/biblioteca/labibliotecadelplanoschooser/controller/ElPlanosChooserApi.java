@@ -31,7 +31,7 @@ public class ElPlanosChooserApi {
     }
  
     @GetMapping("/categories/{category}")
-    public ElPlan chooseRandomPlanos(@PathVariable("category") String category) {
-        return elPlanosChooser.chooseRandomPlanosFromCategory(category);
+    public ResponseEntity<List<ElPlan>> getPlanosFromCategory(@PathVariable("category") String category) {
+        return new ResponseEntity<List<ElPlan>>(elPlanosChooser.getPlanosFromCategory(category), HttpStatus.OK);
     }
 }

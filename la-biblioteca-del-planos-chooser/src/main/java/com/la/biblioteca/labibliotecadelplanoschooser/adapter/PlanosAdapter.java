@@ -29,5 +29,13 @@ public class PlanosAdapter {
         });
         return categoryCountList;
     }
-     
+
+    public List<ElPlan> getPlanosFromCategory(String planosCategory) {
+        System.out.println("Category :: " + planosCategory);
+        List<ElPlan> planosList = this.getAllLosPlanos();
+        System.out.println(planosList);
+        return planosList.stream().filter(
+            planos -> planos.getCategory().equalsIgnoreCase(planosCategory)
+            ).collect(Collectors.toList());
+    }
 }

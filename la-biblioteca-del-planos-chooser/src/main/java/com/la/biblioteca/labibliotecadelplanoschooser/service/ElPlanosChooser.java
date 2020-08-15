@@ -22,10 +22,8 @@ public class ElPlanosChooser {
         return this.planosAdapter.getCategories();
     }
 
-    public ElPlan chooseRandomPlanosFromCategory(String planosCategory) {
-        ElPlan[] planosListForCategory = getPlanosListForCategory(planosCategory);
-        ElPlan elChosenPlanos = chooseRandomPlanosFromPlanosList(planosListForCategory);
-        return elChosenPlanos;
+    public List<ElPlan> getPlanosFromCategory(String planosCategory) {
+        return this.planosAdapter.getPlanosFromCategory(planosCategory);
     }
 
     public ElPlan[] getPlanosListForCategory(String category) {
