@@ -1,12 +1,9 @@
 package com.la.biblioteca.labibliotecadelplanoschooser.service;
 
-import java.util.Arrays;
 import java.util.List;
 import com.la.biblioteca.labibliotecadelplanoschooser.adapter.PlanosAdapter;
 import com.la.biblioteca.labibliotecadelplanoschooser.model.CategoryCount;
 import com.la.biblioteca.labibliotecadelplanoschooser.model.ElPlan;
-import com.la.biblioteca.labibliotecadelplanoschooser.model.ElUltimoPlan;
-
 import org.springframework.stereotype.Service;
 
 

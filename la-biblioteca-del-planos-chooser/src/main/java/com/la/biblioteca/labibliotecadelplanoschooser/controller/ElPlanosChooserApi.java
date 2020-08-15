@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 import com.la.biblioteca.labibliotecadelplanoschooser.model.CategoryCount;
 import com.la.biblioteca.labibliotecadelplanoschooser.model.ElPlan;
-import com.la.biblioteca.labibliotecadelplanoschooser.model.ElUltimoPlan;
 import com.la.biblioteca.labibliotecadelplanoschooser.service.ElPlanosChooser;
 
 @RestController
