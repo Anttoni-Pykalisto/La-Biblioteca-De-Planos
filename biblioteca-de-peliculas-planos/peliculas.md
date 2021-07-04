@@ -20,6 +20,6 @@ Anchor Man 1 & 2
 
 Jungle Book
 
-Luca
+~Luca~
 
-Eurovision Song Contest: The Story of Fire Saga
+~Eurovision Song Contest: The Story of Fire Saga~
