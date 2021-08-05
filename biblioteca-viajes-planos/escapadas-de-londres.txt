@@ -1,5 +1,5 @@
 Cambridge
 Brighton
-St Albans
+~St Albans~
 Oxford 
 Windsor
