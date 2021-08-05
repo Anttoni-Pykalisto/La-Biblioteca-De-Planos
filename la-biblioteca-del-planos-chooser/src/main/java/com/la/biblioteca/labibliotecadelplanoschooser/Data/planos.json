@@ -1,0 +1,38 @@
+[
+    {
+        "category":"London",
+        "elPlan": "Victoria Park",
+        "description": "Take another lil walk around Victoria Park",
+        "status": "TODO"
+    },
+    {
+        "category":"Food",
+        "elPlan": "Anttoni's bday",
+        "description": "Patacones & chimmichurri, BBQ, Tacos",
+        "status": "TODO"
+    },
+    {
+        "category":"London",
+        "elPlan": "The Shard",
+        "description": "We should go the shard one day",
+        "status": "TODO"
+    },
+    {
+        "category":"Food",
+        "elPlan": "Pho",
+        "description": "",
+        "status": "TODO"
+    },
+    {
+        "category":"London",
+        "elPlan": "Roller Skating",
+        "description": "",
+        "status": "TODO"
+    },
+    {
+        "category":"Movie",
+        "elPlan": "Peter Pan",
+        "description": "",
+        "status": "TODO"
+    }
+]
